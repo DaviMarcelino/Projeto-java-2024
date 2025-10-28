@@ -1,0 +1,54 @@
+/* Estilos básicos para a aplicação */
+.root {
+    -fx-font-family: 'Arial';
+    font-family: 'Arial';
+    -fx-base: #3498db;
+    -fx-background: #ecf0f1;
+    background: #ecf0f1;
+}
+
+.button {
+    -fx-background-color: #3498db;
+    background-color: #3498db;
+    -fx-text-fill: white;
+    color: white;
+    -fx-padding: 10 20; /* Increased padding for better appearance */
+    padding: 10px 20; /* Increased padding for better appearance */
+    -fx-border-radius: 8; /* Rounded corners for a softer look */
+    border-radius: 8; /* Rounded corners for a softer look */
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+    background-color: #2980b9;
+}
+
+.text-field, .password-field {
+    -fx-padding: 8;
+    padding: 8px;
+    -fx-border-color: #bdc3c7;
+    border-color: #bdc3c7;
+    -fx-border-radius: 4;
+    border-radius: 4px;
+}
+
+.label {
+    -fx-font-size: 14px;
+    font-size: 14px;
+    -fx-text-fill: #2c3e50;
+    color: #2c3e50;
+}
+
+.alert {
+    -fx-font-size: 14px;
+    font-size: 14px;
+}
+
+/* Estilos específicos para a tela de login */
+#loginPane {
+    -fx-padding: 20;
+    padding: 20px;
+    -fx-spacing: 10;
+    spacing: 10px;
+    -fx-alignment: center;
+}

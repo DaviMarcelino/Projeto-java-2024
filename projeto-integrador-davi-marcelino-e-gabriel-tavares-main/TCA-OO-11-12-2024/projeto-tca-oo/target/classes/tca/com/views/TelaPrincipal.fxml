@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="CENTER" hgap="20" prefHeight="281.0" prefWidth="473.0" style="-fx-background-color: #f4f8ff; -fx-pref-width: 600; -fx-pref-height: 500;" vgap="20" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tca.com.controllers.TelaPrincipalController">
+
+    <padding>
+        <Insets bottom="40" left="40" right="40" top="40" />
+    </padding>
+
+    <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #1565c0; text-alignment: center;" text="Tela Principal" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+    <HBox alignment="CENTER" spacing="20" GridPane.rowIndex="2">
+        <Button fx:id="btnCadastrarPassageiro" onAction="#CadastrarPassageiro" style="-fx-background-color: #1565c0; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-width: 180;" text="Cadastrar Passageiro" />
+        <Button fx:id="btnListarPassageiro" onAction="#ListarPassageiro" style="-fx-background-color: #1565c0; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-width: 180;" text="Lista de Passageiros" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="20" GridPane.rowIndex="3">
+        <Button fx:id="btnCadastrarVoo" onAction="#CadastrarVoo" style="-fx-background-color: #1565c0; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-width: 180;" text="Cadastrar Voo" />
+        <Button fx:id="btnListarVoo" onAction="#ListarVoo" style="-fx-background-color: #1565c0; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-width: 180;" text="Lista de Voos" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="20" GridPane.rowIndex="4">
+        <Button fx:id="btnReservarVoo" onAction="#ReservarVoo" style="-fx-background-color: #1565c0; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-width: 180;" text="Reservar Voo" />
+      <Button fx:id="btnListarReservas" onAction="#ListarReservas" style="-fx-background-color: #1565c0; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-width: 180;" text="Lista de Reservas" />
+    </HBox>
+     <Button fx:id="btnTrocarConta" onAction="#TrocarConta" style="-fx-background-color: #d32f2f; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-width: 180;" text="Trocar Conta" GridPane.rowIndex="5" />
+
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints vgrow="NEVER" />
+        <RowConstraints vgrow="NEVER" />
+        <RowConstraints vgrow="NEVER" />
+        <RowConstraints vgrow="NEVER" />
+      <RowConstraints vgrow="NEVER" />
+      <RowConstraints vgrow="NEVER" />
+    </rowConstraints>
+</GridPane>

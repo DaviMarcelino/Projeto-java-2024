@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="CENTER" hgap="15" prefHeight="337.0" style="-fx-background-color: #f0f4f8; -fx-pref-width: 400; -fx-pref-height: 500;" vgap="15" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tca.com.controllers.EditarPassageiroController">
+
+    <padding>
+        <Insets bottom="40" left="40" right="40" top="40" />
+    </padding>
+
+    <Label prefHeight="35.0" prefWidth="354.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1565c0;" text="Editar Passageiro" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <Label style="-fx-text-fill: #1e88e5;" text="Nome:" GridPane.rowIndex="1" />
+    <TextField fx:id="txtNome" prefHeight="27.0" prefWidth="275.0" promptText="Digite o nome do passageiro" style="-fx-border-color: #1e88e5; -fx-border-radius: 8; -fx-focus-color: #64b5f6; -fx-background-radius: 8 ```xml
+;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Label style="-fx-text-fill: #1e88e5;" text="E-mail:" GridPane.rowIndex="2" />
+    <TextField fx:id="txtEmail" prefHeight="27.0" prefWidth="275.0" promptText="Digite o e-mail do passageiro" style="-fx-border-color: #1e88e5; -fx-border-radius: 8; -fx-focus-color: #64b5f6; -fx-background-radius: 8;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Label style="-fx-text-fill: #1e88e5;" text="Telefone:" GridPane.rowIndex="3" />
+    <TextField fx:id="txtTelefone" prefHeight="27.0" prefWidth="275.0" promptText="Digite o telefone do passageiro" style="-fx-border-color: #1e88e5; -fx-border-radius: 8; -fx-focus-color: #64b5f6; -fx-background-radius: 8;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <Label style="-fx-text-fill: #1e88e5;" text="Data de Nascimento:" GridPane.rowIndex="4" />
+    <DatePicker fx:id="txtDataNascimento" editable="false" prefHeight="27.0" prefWidth="275.0" promptText="Selecione a data" style="-fx-border-color: #1e88e5; -fx-border-radius: 8; -fx-background-radius: 8;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+    <HBox alignment="CENTER" spacing="20" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <Button fx:id="btnSalvar" onAction="#btnSalvar" style="-fx-background-color: #1565c0; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-width: 120;" text="Editar" />
+        <Button fx:id="btnVoltar" onAction="#btnVoltar" style="-fx-background-color: #e57373; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 8; -fx-pref-width: 120;" text="Voltar" />
+    </HBox>
+   
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
